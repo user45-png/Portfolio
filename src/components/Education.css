@@ -1,0 +1,27 @@
+.education-section {
+  padding: 2rem 1rem;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #00e5ff;
+  color: white;
+  backdrop-filter: blur(8px);
+  transition: 0.2s ease;
+}
+
+.edu-card:hover {
+  background: rgba(0, 229, 255, 0.12);
+}
+
+.edu-card h5 {
+  margin-bottom: 0.3rem;
+}
+
+.edu-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}

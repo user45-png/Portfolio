@@ -1,0 +1,117 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem;
+  margin: 2rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-item, .award-item {
+  margin: 1rem 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  z-index: 1000;
+}
+
+.sidebar a {
+  display: block;
+  margin: 10px 0;
+  color: #fff;
+  font-size: 1.4rem;
+  transition: transform 0.2s;
+}
+
+.sidebar a:hover {
+  transform: scale(1.2);
+  color: #00d1ff;
+}
+
+/* Default to dark-mode */
+body, .App {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.light-mode {
+  background-color: #f2f2f2;
+  color: #111111;
+}
+
+.toggle-mode-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle-mode-btn:hover {
+  background: #666;
+}
+
+.light-mode {
+  background-color: #f4f4f4;
+  color: #111;
+}
+
+.light-mode .glass-card,
+.light-mode .card-item {
+  color: #111;
+}
